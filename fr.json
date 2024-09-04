@@ -1,0 +1,44 @@
+{
+    "header": {
+      "home": "Accueil",
+      "about": "À propos",
+      "resume": "CV",
+      "portfolio": "Portfolio",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "hero": {
+      "name": "Lamarana Diallo",
+      "im": "Je suis",
+      "roles": ["Data Scientist", "Développeur", "Ingénieur en Machine Learning", "Passionné d'IA"]
+    },
+    "about": {
+      "title": "À propos",
+      "subtitle": "Data Scientist & Ingénieur en Machine Learning",
+      "description": "Transformer les données en insights exploitables et construire des systèmes intelligents pour générer de la valeur commerciale.",
+      "info": {
+        "birthday": "Date de naissance",
+        "website": "Site web",
+        "phone": "Téléphone",
+        "city": "Ville",
+        "age": "Âge",
+        "degree": "Diplôme",
+        "email": "Email",
+        "freelance": "Freelance"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Si vous êtes intéressé par une collaboration sur un projet, si vous avez des questions sur mes services ou si vous souhaitez discuter d'opportunités potentielles, n'hésitez pas à me contacter.",
+      "location": "Localisation",
+      "email": "Email",
+      "call": "Téléphone",
+      "form": {
+        "name": "Votre Nom",
+        "email": "Votre Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer le Message"
+      }
+    }
+  }

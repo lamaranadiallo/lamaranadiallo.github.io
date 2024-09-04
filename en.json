@@ -1,0 +1,44 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "resume": "Resume",
+      "portfolio": "Portfolio",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "hero": {
+      "name": "Lamarana Diallo",
+      "im": "I'm",
+      "roles": ["Data Scientist", "Developer", "Machine Learning Engineer", "AI Enthusiast"]
+    },
+    "about": {
+      "title": "About",
+      "subtitle": "Data Scientist & Machine Learning Engineer",
+      "description": "Transforming data into actionable insights and building intelligent systems to drive business value.",
+      "info": {
+        "birthday": "Birthday",
+        "website": "Website",
+        "phone": "Phone",
+        "city": "City",
+        "age": "Age",
+        "degree": "Degree",
+        "email": "Email",
+        "freelance": "Freelance"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "If you're interested in collaborating on a project, have any questions about my services, or would like to discuss potential opportunities, please don't hesitate to get in touch.",
+      "location": "Location",
+      "email": "Email",
+      "call": "Call",
+      "form": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message"
+      }
+    }
+  }
