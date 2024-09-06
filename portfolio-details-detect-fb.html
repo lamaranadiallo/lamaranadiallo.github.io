@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Electronics Retail Sales Analysis - Lamarana's Portfolio</title>
-  <meta content="Detailed sales analysis of a global electronics retail company" name="description">
-  <meta content="data science, sales analysis, data visualization, portfolio" name="keywords">
+  <title>Fake Banknote Detection - Lamarana's Portfolio</title>
+  <meta content="Project on detecting fake banknotes using exploratory analysis, PCA, KMeans clustering, and logistic regression" name="description">
+  <meta content="data science, fake banknote detection, machine learning, PCA, KMeans, logistic regression, portfolio" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">[Your Name]</a></h1>
+        <h1 class="text-light"><a href="index.html">Lamarana</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -89,16 +89,29 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
+
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Top-sales-product-category.jpg" alt="Top sales product category by country">
+                    <img src="assets/img/portfolio/fake-bills-dist.jpg" alt="Bills distribution">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/km_distribution.png" alt="Clustering of banknotes using KMeans">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/km_pred.png" alt="Clustering of banknotes using KMeans">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/score_plot_km_f1_f2.png" alt="Clustering of banknotes using KMeans">
+                  </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/score_plot_acp.png" alt="Principal Component Analysis (PCA)">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sales-evolution.jpg" alt="Monthly Sales Evolution">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/channel-comparison.jpg" alt="Sales Channel Comparison">
+                  <img src="assets/img/portfolio/reg_log_results.png" alt="Logistic Regression Modeling">
                 </div>
 
               </div>
@@ -108,29 +121,27 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Business Data Analysis</li>
-                <li><strong>Client</strong>: Global Electronics Retail Company</li>
-                <li><strong>Project date</strong>: January 2024 - April 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/lamaranadiallo/Analyse-Ventes-Electronic">Sales Analysis Project</a></li>
+                <li><strong>Category</strong>: Machine Learning, Fraud Detection</li>
+                <li><strong>Project date</strong>: September 2024</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/lamaranadiallo/Classification-faux-billets/blob/main/README_en.md">Project Repository</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Electronics Retail Sales Analysis</h2>
+              <h2>Fake Banknote Detection</h2>
               <p>
-                This project involved a comprehensive analysis of sales data for a global electronics retail company. The goal was to identify key trends, optimize sales performance, and provide data-driven strategic recommendations.
+                This project focuses on detecting fake banknotes based on their physical characteristics (dimensions, margins, etc.). Several machine learning techniques were used, including Principal Component Analysis (PCA), KMeans clustering, and logistic regression.
               </p>
               <h4>Key Achievements:</h4>
               <ul>
-                <li>Detailed analysis of sales by product category and geographical region.</li>
-                <li>Study of temporal and seasonal sales trends over a 5-year period.</li>
-                <li>Comparative assessment of online and in-store sales channel performance.</li>
-                <li>Analysis of delivery times and their impact on sales.</li>
-                <li>Development of strategic recommendations for sales optimization and customer experience improvement.</li>
+                <li>Data exploration and visualization to understand variable relationships.</li>
+                <li>Dimensionality reduction with PCA for easier visualization and interpretation.</li>
+                <li>Unsupervised classification of banknotes using KMeans clustering.</li>
+                <li>Supervised modeling with logistic regression to predict the authenticity of banknotes.</li>
               </ul>
               <h4>Technologies Used:</h4>
-              <p>Python, Pandas, Matplotlib, Seaborn, Plotly, SQL</p>
+              <p>Python, Pandas, Seaborn, Scikit-learn, Matplotlib</p>
             </div>
           </div>
 
@@ -140,41 +151,28 @@
           <div class="col-lg-12">
             <h3>Context and Challenges</h3>
             <p>
-              The company was facing growing challenges in an ever-evolving electronics market. With sales data spanning several years and covering various products and regions, it was crucial to extract actionable insights to guide future strategy.
+              Counterfeit banknotes pose a persistent issue, and detecting them requires advanced data analysis methods. This project offers a solution to automatically identify fraudulent banknotes based on their physical attributes.
             </p>
             <h3>Methodology</h3>
             <p>
-              The analysis was conducted in several stages:
+              The project followed several steps:
             </p>
             <ol>
-              <li>Cleaning and preparation of data from multiple sources.</li>
-              <li>Exploratory data analysis to identify general trends.</li>
-              <li>In-depth analysis of sales by product category, region, and sales channel.</li>
-              <li>Study of temporal and seasonal trends.</li>
-              <li>Analysis of the impact of delivery times on sales and customer satisfaction.</li>
-              <li>Detailed comparison of online and in-store sales performance.</li>
+              <li>Data cleaning and preparation.</li>
+              <li>Exploratory data analysis to identify key trends and patterns.</li>
+              <li>Dimensionality reduction using PCA to visualize clustering.</li>
+              <li>Applying the KMeans algorithm for unsupervised clustering.</li>
+              <li>Supervised modeling using logistic regression to predict banknote authenticity.</li>
             </ol>
-            <h3>Key Findings</h3>
+            <h3>Key Results</h3>
             <ul>
-              <li>Identification of best-performing product categories, with computers leading in sales.</li>
-              <li>Highlighting strong sales seasonality, with significant peaks at year-end.</li>
-              <li>Discovery of a consistent improvement in delivery times, from 8 days in 2016 to about 4 days in 2021.</li>
-              <li>Observation of slightly superior in-store sales compared to online sales, but with significant growth potential for the online channel.</li>
-            </ul>
-            <h3>Recommendations</h3>
-            <p>
-              Based on this analysis, several strategic recommendations were formulated:
-            </p>
-            <ul>
-              <li>Strengthen the product offering in the computer category while seeking to diversify to reduce dependency.</li>
-              <li>Optimize inventory management and marketing strategies in anticipation of seasonal peaks.</li>
-              <li>Continue to improve delivery times, aiming for an average of 3 days to enhance competitiveness.</li>
-              <li>Develop a robust omnichannel strategy, improving the online shopping experience while capitalizing on the strengths of physical stores.</li>
-              <li>Implement predictive analytics to anticipate future trends and quickly adapt strategy.</li>
+              <li>The first two principal components explained a significant amount of variance, making it easier to visualize banknote groups.</li>
+              <li>KMeans clustering demonstrated a clear separation between genuine and fake banknotes.</li>
+              <li>The logistic regression model achieved over 90% accuracy in detecting fake banknotes.</li>
             </ul>
             <h3>Impact and Added Value</h3>
             <p>
-              This analysis provided the company with a deep understanding of its sales performance and growth opportunities. The recommendations formulated have the potential to increase revenue, improve operational efficiency, and enhance customer satisfaction. Implementing these strategies could lead to an estimated 15% increase in overall sales and a 20% improvement in customer satisfaction.
+              This project demonstrates the effectiveness of machine learning in fraud detection. The methods used here can be adapted to other scenarios where statistical and machine learning methods are needed to detect anomalies or fraudulent behavior.
             </p>
           </div>
         </div>
@@ -188,7 +186,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Lamarana DIALLO</span></strong>
+        &copy; Copyright <strong><span>Lamarana </span></strong>
       </div>
     </div>
   </footer><!-- End  Footer -->
