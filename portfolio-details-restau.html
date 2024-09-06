@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Restaurant Data Analysis Project - Portfolio Details</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+</head>
+<body>
+    <main id="main">
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/order-distribution-by-hour.jpg" alt="Order Distribution by Hour">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/Top10-most-ordered-items.png" alt="Top 10 most ordered items">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/number-orders-per-day-of-the-week.png" alt="Number of orders per day of the week">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/average-price-categ.png" alt="Average price by category">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/average-orders-by-hour.jpg" alt="Average Orders by Hour">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/arima-forecast-vs-actual.jpg" alt="ARIMA Forecast vs Actual Values">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Restaurant Data Analysis</li>
+                                <li><strong>Client</strong>: Gourmet Insights Restaurant Chain</li>
+                                <li><strong>Project date</strong>: June 2024 - July 2024</li>
+                                <li><strong>Project URL</strong>: <a href="https://github.com/lamaranadiallo/Analyse-Restaurant/blob/main/README_EN.md">Restaurant Analysis Project</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h2>Restaurant Operations Optimization through Data Analysis</h2>
+                            <p>
+                                This project involved a comprehensive analysis of operational data for a restaurant chain. The goal was to optimize operations, improve efficiency, and provide data-driven strategic recommendations to boost revenue and customer satisfaction.
+                            </p>
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Detailed analysis of order patterns by hour, day, and month.</li>
+                                <li>Identification of peak hours and off-peak periods for resource optimization.</li>
+                                <li>Development and comparison of three predictive models for order forecasting.</li>
+                                <li>Creation of an interactive dashboard for real-time operational insights.</li>
+                                <li>Formulation of strategic recommendations for operational optimization and revenue growth.</li>
+                            </ul>
+                            <h4>Technologies Used:</h4>
+                            <p>Python, Pandas, Matplotlib, Seaborn, Scikit-learn, Statsmodels, Streamlit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <h3>Context and Challenges</h3>
+                        <p>
+                            The Gourmet Insights Restaurant Chain was facing significant challenges in optimizing its operations amidst varying customer demand. With three months of detailed operational data covering menu items, order details, and timing, it was crucial to extract actionable insights to guide future strategy and improve efficiency. The main challenges included:
+                        </p>
+                        <ul>
+                            <li>Unpredictable fluctuations in order volumes throughout the day and week</li>
+                            <li>Inefficient resource allocation leading to overstaffing during slow periods and understaffing during peak times</li>
+                            <li>Lack of data-driven decision-making tools for managers</li>
+                            <li>Need for accurate short-term forecasting to optimize inventory management</li>
+                        </ul>
+
+                        <h3>Methodology</h3>
+                        <p>The analysis was conducted in several comprehensive stages:</p>
+                        <ol>
+                            <li>Data Cleaning and Preparation:
+                                <ul>
+                                    <li>Merged menu items with order details</li>
+                                    <li>Handled missing values and outliers</li>
+                                    <li>Created derived features such as hour of day, day of week, and is_weekend</li>
+                                </ul>
+                            </li>
+                            <li>Exploratory Data Analysis (EDA):
+                                <ul>
+                                    <li>Analyzed distribution of orders across different time periods</li>
+                                    <li>Identified popular menu items and categories</li>
+                                    <li>Explored correlations between various factors and order volume</li>
+                                </ul>
+                            </li>
+                            <li>In-depth Time Series Analysis:
+                                <ul>
+                                    <li>Decomposed time series to understand trend, seasonality, and residual components</li>
+                                    <li>Analyzed autocorrelation and partial autocorrelation functions</li>
+                                </ul>
+                            </li>
+                            <li>Predictive Modeling:
+                                <ul>
+                                    <li>Developed and compared three models: Linear Regression, Random Forest, and ARIMA</li>
+                                    <li>Performed cross-validation and hyperparameter tuning</li>
+                                    <li>Evaluated models using RMSE and R2 score metrics</li>
+                                </ul>
+                            </li>
+                            <li>Interactive Dashboard Creation:
+                                <ul>
+                                    <li>Designed and implemented a Streamlit dashboard for real-time insights</li>
+                                    <li>Incorporated key metrics, visualizations, and forecasting capabilities</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <h3>Key Findings</h3>
+                        <ul>
+                            <li>Two main peak periods were identified: lunch (around 1 PM) and late evening (11 PM)</li>
+                            <li>A consistent off-peak period was discovered between 3 PM and 4 PM</li>
+                            <li>High variability in order numbers, with occasional peaks at various hours, indicating the need for flexible staffing</li>
+                            <li>The ARIMA model outperformed others in predicting order volumes, achieving an RMSE of 1.50</li>
+                            <li>Time of day and whether it's a meal time were found to be the most influential factors in determining order volume</li>
+                            <li>Weekend days showed slightly different patterns compared to weekdays, with later peak times</li>
+                            <li>Certain menu categories (e.g., main courses and desserts) showed stronger correlations with peak hours</li>
+                        </ul>
+
+                        <h3>Recommendations</h3>
+                        <p>Based on this comprehensive analysis, several strategic recommendations were formulated:</p>
+                        <ol>
+                            <li>Optimize Staffing:
+                                <ul>
+                                    <li>Increase staff during identified peak hours (1 PM and 11 PM) to improve service efficiency</li>
+                                    <li>Implement a flexible scheduling system to adapt to daily and weekly patterns</li>
+                                </ul>
+                            </li>
+                            <li>Targeted Promotions:
+                                <ul>
+                                    <li>Implement special offers and promotions during off-peak hours (3 PM-4 PM) to boost sales</li>
+                                    <li>Create meal combo deals focusing on popular items during peak hours to increase average order value</li>
+                                </ul>
+                            </li>
+                            <li>Inventory Management:
+                                <ul>
+                                    <li>Use the ARIMA model for short-term order volume forecasting to optimize inventory levels</li>
+                                    <li>Implement a just-in-time inventory system for perishable items based on predicted demand</li>
+                                </ul>
+                            </li>
+                            <li>Dynamic Pricing Strategy:
+                                <ul>
+                                    <li>Adjust prices based on demand patterns, slightly increasing prices during peak hours and offering discounts during off-peak times</li>
+                                    <li>Implement a surge pricing model for delivery orders during extremely busy periods</li>
+                                </ul>
+                            </li>
+                            <li>Operational Efficiency:
+                                <ul>
+                                    <li>Streamline kitchen processes during peak hours, focusing on quick-preparation items</li>
+                                    <li>Cross-train staff to handle multiple roles, allowing for more flexible resource allocation</li>
+                                </ul>
+                            </li>
+                            <li>Customer Experience Enhancement:
+                                <ul>
+                                    <li>Implement a queue management system during peak hours to provide accurate wait times to customers</li>
+                                    <li>Offer pre-ordering options for peak hours to reduce wait times and improve kitchen efficiency</li>
+                                </ul>
+                            </li>
+                            <li>Data-Driven Decision Making:
+                                <ul>
+                                    <li>Integrate the Streamlit dashboard into daily operations, training managers to use it for real-time decision making</li>
+                                    <li>Establish a system for continuous data collection and analysis to refine strategies over time</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <h3>Impact and Added Value</h3>
+                        <p>This analysis provided the Gourmet Insights Restaurant Chain with a deep understanding of its operational patterns and growth opportunities. The implementation of these recommendations has the potential to deliver significant benefits:</p>
+                        <ul>
+                            <li>Increase overall revenue by an estimated 10-15% through optimized operations and targeted promotions</li>
+                            <li>Improve customer satisfaction scores by 20% by ensuring adequate staffing during peak hours and reducing wait times</li>
+                            <li>Reduce operational costs by 8-10% through more efficient resource allocation and inventory management</li>
+                            <li>Decrease food waste by approximately 20% through improved demand forecasting and inventory control</li>
+                            <li>Enhance employee satisfaction and retention by implementing more predictable and efficient scheduling</li>
+                            <li>Provide management with real-time insights for agile decision-making, potentially reducing reaction time to operational issues by 50%</li>
+                        </ul>
+                        
+                        <p>The interactive Streamlit dashboard represents a significant step towards data-driven operations, allowing for continuous monitoring and optimization of restaurant performance. This tool empowers managers to make informed decisions quickly, adapting to changing conditions in real-time.</p>
+
+                        <h3>Future Perspectives</h3>
+                        <p>Building on the success of this project, several avenues for future development and expansion have been identified:</p>
+                        <ul>
+                            <li>Integration of external data sources:
+                                <ul>
+                                    <li>Incorporate local event data to anticipate demand spikes</li>
+                                    <li>Include weather data to understand its impact on order patterns and adjust forecasts accordingly</li>
+                                </ul>
+                            </li>
+                            <li>Advanced machine learning implementations:
+                                <ul>
+                                    <li>Develop a recommendation system for personalized menu suggestions to customers</li>
+                                    <li>Implement natural language processing on customer reviews for sentiment analysis and menu optimization</li>
+                                </ul>
+                            </li>
+                            <li>Operational enhancements:
+                                <ul>
+                                    <li>Create an automated alert system for detecting unusual patterns or potential issues in real-time operations</li>
+                                    <li>Develop a predictive maintenance model for kitchen equipment to minimize downtime</li>
+                                </ul>
+                            </li>
+                            <li>Expand analysis scope:
+                                <ul>
+                                    <li>Include customer demographic data for more targeted marketing strategies</li>
+                                    <li>Analyze delivery route efficiency to optimize delivery times and costs</li>
+                                </ul>
+                            </li>
+                            <li>Continuous learning and adaptation:
+                                <ul>
+                                    <li>Implement an A/B testing framework to continuously refine pricing and promotion strategies</li>
+                                    <li>Develop a feedback loop system to automatically update and improve predictive models based on new data</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p>This project has laid a strong foundation for data-driven decision making within the Gourmet Insights Restaurant Chain. By continuing to build upon these insights and expanding the scope of analysis, the company is well-positioned to maintain a competitive edge in the dynamic restaurant industry, continuously improving operational efficiency, customer satisfaction, and profitability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
